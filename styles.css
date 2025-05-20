@@ -1,0 +1,194 @@
+/*
+    styles.css
+    -------------------
+    This file contains all the CSS for your portfolio website.
+    Keeping styles in a separate file is a best practice for scalability and maintainability.
+    You can import this file in any HTML or framework (like React) project.
+*/
+
+:root {
+    --bg-main: #1e1e1e;         /* Main background */
+    --bg-section: #252526;      /* Section background */
+    --text-main: #d4d4d4;       /* Main text color */
+    --accent: #569cd6;          /* Accent color (links, highlights) */
+    --card-bg: #2d2d2d;         /* Project card background */
+    --border: #333;             /* Border color for separation */
+    --shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg-main);
+    color: var(--text-main);
+    font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+    scroll-behavior: smooth;
+}
+main {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+section {
+    background: var(--bg-section);
+    margin: 2.5rem 0;
+    padding: 2.5rem 2rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border);
+}
+h1, h2, h3 {
+    color: #fff;
+    margin-top: 0;
+}
+a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+a:hover, a:focus {
+    color: #9cdcfe;
+}
+/* --- Hero Section Styles --- */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 40vh;
+    text-align: center;
+    /* 
+        Fondo difuminado (gradiente) para un look moderno y limpio.
+        Puedes ajustar los colores del gradiente si lo deseas.
+    */
+    background: linear-gradient(120deg, #23272e 60%, #1e1e1e 100%);
+}
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.hero-subtitle {
+    font-size: 1.3rem;
+    color: var(--accent);
+    margin-bottom: 1rem;
+}
+.hero-message {
+    font-size: 1.1rem;
+    color: #bdbdbd;
+    margin-top: 0.5rem;
+}
+/* Hero icon styles */
+.hero-icon {
+    margin-bottom: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-icon svg {
+    width: 64px;
+    height: 64px;
+    display: block;
+}
+/* --- About Section Styles --- */
+.about-text {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #cccccc;
+}
+/* --- Projects Section Styles --- */
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: space-between;
+}
+.project-card {
+    background: var(--card-bg);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border);
+    flex: 1 1 260px;
+    min-width: 260px;
+    max-width: 300px;
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.project-image {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
+    object-fit: contain;
+    border-radius: 8px;
+    background: #23272e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.project-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin: 0.5rem 0 0.3rem 0;
+    color: #fff;
+}
+.project-desc {
+    font-size: 0.98rem;
+    color: #bdbdbd;
+    text-align: center;
+    margin-bottom: 1.2rem;
+}
+.project-link {
+    background: var(--accent);
+    color: #1e1e1e;
+    padding: 0.5rem 1.2rem;
+    border-radius: 6px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+    border: none;
+    cursor: pointer;
+}
+.project-link:hover, .project-link:focus {
+    background: #9cdcfe;
+    color: #23272e;
+}
+/* --- Contact Section Styles --- */
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.2rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+.contact-list li {
+    font-size: 1.05rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.contact-icon {
+    font-size: 1.2rem;
+    color: var(--accent);
+}
+/* --- Responsive Design --- */
+@media (max-width: 700px) {
+    main {
+        padding: 0 0.5rem;
+    }
+    section {
+        padding: 1.5rem 0.7rem;
+    }
+    .projects-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*
+    You can add more styles below as your project grows.
+    For frameworks like React, you can import this file in your main entry point.
+*/

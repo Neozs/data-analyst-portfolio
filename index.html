@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analyst Portfolio</title>
+    <!-- Link to external CSS for scalability and maintainability -->
+    <link rel="stylesheet" href="styles.css">
+    <!--
+        If you need JavaScript in the future, create a main.js file and include it at the end of <body>.
+        This is a best practice for performance and scalability.
+    -->
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <main>
+        <!-- 
+            --- Hero Section ---
+            Displays your name, title, and a welcome message.
+        -->
+        <section class="hero" id="hero">
+            <!-- Data Analytics Icon (SVG) -->
+            <div class="hero-icon" aria-hidden="true">
+                <!-- Puedes cambiar este SVG por otro que te guste -->
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none">
+                    <rect x="3" y="13" width="3" height="8" rx="1" fill="#569cd6"/>
+                    <rect x="9" y="9" width="3" height="12" rx="1" fill="#9cdcfe"/>
+                    <rect x="15" y="5" width="3" height="16" rx="1" fill="#4ec9b0"/>
+                    <rect x="21" y="0" width="3" height="21" rx="1"  fill="#dcdcaa"/>
+                </svg>
+            </div>
+            <h1 class="hero-title">Juan Felipe Osorio Murillo</h1>
+            <div class="hero-subtitle">Data Analyst - IT Support Proffesional</div>
+            <div class="hero-message">
+                <!-- Short welcome or mission statement -->
+                Turning data into actionable insights.
+            </div>
+        </section>
+
+        <!-- 
+            --- About Me Section ---
+            Briefly introduce yourself, your experience, and interests.
+        -->
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-text">
+                <!-- Replace with your own paragraphs -->
+                <p>
+                    I am a passionate data analyst with experience in uncovering trends and insights from complex datasets. My expertise includes data visualization, statistical analysis, and building dashboards to drive business decisions.
+                </p>
+                <p>
+                    I enjoy working with Python, SQL, and modern BI tools. I am always eager to tackle new challenges and collaborate on impactful projects.
+                </p>
+            </div>
+        </section>
+
+        <!-- 
+            --- Projects Section ---
+            Showcase at least three projects. Each project is a card with an image/icon, title, description, and link.
+        -->
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="projects-list">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <!-- Replace src with your project image/icon or use a placeholder -->
+                    <img class="project-image" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python Project Icon">
+                    <div class="project-title">Sales Dashboard</div>
+                    <div class="project-desc">
+                        Interactive dashboard visualizing sales data and trends using Power BI and Python.
+                    </div>
+                    <a class="project-link" href="https://github.com/yourusername/sales-dashboard" target="_blank" rel="noopener">View Project</a>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <img class="project-image" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" alt="Jupyter Project Icon">
+                    <div class="project-title">Customer Segmentation</div>
+                    <div class="project-desc">
+                        Clustered customers using K-Means to improve marketing strategies. Includes full Jupyter Notebook.
+                    </div>
+                    <a class="project-link" href="https://github.com/yourusername/customer-segmentation" target="_blank" rel="noopener">View Project</a>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <img class="project-image" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL Project Icon">
+                    <div class="project-title">SQL Data Exploration</div>
+                    <div class="project-desc">
+                        Analyzed large datasets with advanced SQL queries and created insightful reports.
+                    </div>
+                    <a class="project-link" href="https://github.com/yourusername/sql-data-exploration" target="_blank" rel="noopener">View Project</a>
+                </div>
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <img class="project-image" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas Project Icon">
+                    <div class="project-title">Data Cleaning with Pandas</div>
+                    <div class="project-desc">
+                        Cleaned and transformed messy datasets using Python's Pandas library.
+                    </div>
+                    <a class="project-link" href="https://github.com/yourusername/sql-data-exploration" target="_blank" rel="noopener">View Project</a>
+            </div>
+        </section>
+
+        <!-- 
+            --- Contact Section ---
+            Provides your email and links to LinkedIn and GitHub.
+        -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <ul class="contact-list">
+                <!-- Email -->
+                <li>
+                    <span class="contact-icon">📧</span>
+                    <a href="mailto:juanfelipeosoriomurillo@gmail.com">Juanfelipeosoriomurillo@gmail.com</a>
+                </li>
+                <!-- LinkedIn -->
+                <li>
+                    <span class="contact-icon">💼</span>
+                    <a href="https://www.linkedin.com/in/juanfelipe-osorio/" target="_blank" rel="noopener">LinkedIn</a>
+                </li>
+                <!-- GitHub -->
+                <li>
+                    <span class="contact-icon">🐙</span>
+                    <a href="https://github.com/Neozs" target="_blank" rel="noopener">GitHub</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <!-- Placeholder for future JavaScript -->
+    <!-- <script src="main.js"></script> -->
+</body>
+</html>
