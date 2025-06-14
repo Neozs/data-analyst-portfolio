@@ -1,16 +1,8 @@
-/*
-    styles.css
-    -------------------
-    This file contains all the CSS for your portfolio website.
-    Keeping styles in a separate file is a best practice for scalability and maintainability.
-    You can import this file in any HTML or framework (like React) project.
-*/
-
 :root {
     --bg-main: #1e1e1e;         /* Main background */
     --bg-section: #252526;      /* Section background */
     --text-main: #d4d4d4;       /* Main text color */
-    --accent: #569cd6;          /* Accent color (links, highlights) */
+    --accent: #569cd6;          /* Accent color */
     --card-bg: #2d2d2d;         /* Project card background */
     --border: #333;             /* Border color for separation */
     --shadow: 0 2px 8px rgba(0,0,0,0.2);
@@ -57,10 +49,6 @@ a:hover, a:focus {
     justify-content: center;
     min-height: 40vh;
     text-align: center;
-    /* 
-        Fondo difuminado (gradiente) para un look moderno y limpio.
-        Puedes ajustar los colores del gradiente si lo deseas.
-    */
     background: linear-gradient(120deg, #23272e 60%, #1e1e1e 100%);
 }
 .hero-title {
@@ -188,7 +176,3 @@ a:hover, a:focus {
     }
 }
 
-/*
-    You can add more styles below as your project grows.
-    For frameworks like React, you can import this file in your main entry point.
-*/
